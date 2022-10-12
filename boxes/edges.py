@@ -1455,12 +1455,12 @@ class HingePin(BaseEdge):
                pinl,
                90,
                t,
-               -90, d)
+               -90, 0)
 
         if self.settings.outset:
             pin += (
                 0,
-                self.settings.hingestrength + 0.5 * t,
+                self.settings.hingestrength + 0.5 * t + d,
                 -90,
                 t,
                 90,
@@ -1473,10 +1473,15 @@ class HingePin(BaseEdge):
         self.polyline(*pin)
 
     def flushlen(self):
-        l = self.settings.hingestrength + self.settings.axle
+        t = self.settings.thickness
+        pinl = (self.settings.axle ** 2 - t ** 2) ** 0.5 * self.settings.pinwidth
+        d = (self.settings.axle - pinl) / 2.0
+
+        l = self.settings.hingestrength + self.settings.axle - d
 
         if self.settings.outset:
-            l += self.settings.hingestrength + 0.5 * self.settings.thickness
+            l += self.settings.hingestrength + 0.5 * self.settings.thickness + d
+        print(l)
 
         return l
 
