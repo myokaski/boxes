@@ -834,7 +834,7 @@ Values:
 * absolute
   * style : "rectangular" : style of the fingers
   * surroundingspaces : 2.0 : space at the start and end in multiple of normal spaces
-  * angle: 90 : Angle of the walls meeting
+  * angle : 90 : angle of the walls meeting
 
 * relative (in multiples of thickness)
 
@@ -1251,7 +1251,7 @@ Values:
  * style : "outset" : "outset" or "flush"
  * outset : False : have lid overlap at the sides (similar to OutSetEdge)
  * pinwidth : 1.0 : set to lower value to get disks surrounding the pins
- * grip_percentage" : 0 : percentage of the lid that should get grips
+ * grip_percentage : 0 : percentage of the lid that should get grips
 
 * relative (in multiples of thickness)
 
@@ -1515,6 +1515,7 @@ Values:
 
  * pin_height : 2.0 : radius of the disc rotating in the hinge (multiples of thickness)
  * hinge_strength : 1.0 : thickness of the arc holding the pin in place (multiples of thickness)
+ * play : 0.1 : space around hinge to allow lid open and close freely (multiples of thickness)
 
 * absolute
 
