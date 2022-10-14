@@ -125,7 +125,7 @@ msgstr ""
 #. s edge description
 #: boxes/edges.py
 msgid "s Stackable (bottom, finger joint holes)"
-msgstr "s составной низ + шип-отверстие"
+msgstr "s стыкуемый низ + шип-отверстие"
 
 #. S edge description
 #: boxes/edges.py
@@ -135,7 +135,7 @@ msgstr ""
 #. S edge description
 #: boxes/edges.py
 msgid "S Stackable (top)"
-msgstr "S составной верх"
+msgstr "S стыкуемый верх"
 
 #. š edge description
 #: boxes/edges.py
@@ -155,7 +155,7 @@ msgstr ""
 #. Š edge description
 #: boxes/edges.py
 msgid "Š Stackable edge with finger holes (top)"
-msgstr "Š составной верх + шип-отверстие"
+msgstr "Š стыкуемый верх + шип-отверстие"
 
 #. i edge description
 #: boxes/edges.py
@@ -551,7 +551,7 @@ msgstr ""
 
 #. help for parameter x
 msgid "inner width in mm (unless outside selected)"
-msgstr "внутренняя ширина в мм (если не выбрана внешняя)"
+msgstr "внутренняя глубина в мм (если не выбрана внешняя)"
 
 #. parameter name
 msgid "y"
@@ -559,7 +559,7 @@ msgstr ""
 
 #. help for parameter y
 msgid "inner depth in mm (unless outside selected)"
-msgstr "внутренняя глубина в мм (если не выбрана внешняя)"
+msgstr "внутренняя ширина в мм (если не выбрана внешняя)"
 
 #. parameter name
 msgid "h"
@@ -692,7 +692,7 @@ msgstr ""
 
 #. parameter name
 msgid "outside"
-msgstr "Внешний"
+msgstr "Внешняя"
 
 #. help for parameter outside
 msgid ""
@@ -852,7 +852,7 @@ msgstr "компенсация диаметра луча/фрезы в мм (б�
 " [🛈](https://florianfesti.github.io/boxes/html/usermanual.html#burn)"
 
 msgid "Settings for Finger Joints"
-msgstr "Настройки Шипа"
+msgstr "Настройки шиповых соединений"
 
 #. parameter name for FingerJoint
 msgid "angle"
@@ -867,92 +867,88 @@ msgid "style"
 msgstr "Тип"
 
 #. help for parameter style
-#, fuzzy
 msgid "style of the fingers"
-msgstr "ширина шипа"
+msgstr "тип шипа"
 
 #. possible choice for style
 msgid "rectangular"
-msgstr ""
+msgstr "прямоугольный"
 
 #. possible choice for style
 msgid "springs"
-msgstr ""
+msgstr "пружинный"
 
 #. possible choice for style
 msgid "barbs"
-msgstr ""
+msgstr "зазубренный"
 
 #. possible choice for style
 msgid "snap"
-msgstr ""
+msgstr "защёлка"
 
 #. parameter name for FingerJoint
 msgid "surroundingspaces"
-msgstr "Отступ от края"
+msgstr "Отступ от угла"
 
 #. help for parameter surroundingspaces
-msgid "minimal space at the start and end in multiple of normal spaces"
+msgid "space at the start and end in multiple of normal spaces"
 msgstr ""
-"минимальное расстояние в начале и в конце, кратное стандартному отступу"
+"расстояние в начале и в конце, кратное стандартному пазу"
 
 #. parameter name for FingerJoint
 msgid "edge_width"
-msgstr ""
+msgstr "Отступ от края"
 
 #. help for parameter edge_width
 msgid "space below holes of FingerHoleEdge (multiples of thickness)"
-msgstr ""
+msgstr "отступ отверстий от края в соединении типа шип-отверстие (кратно толщине)"
 
 #. parameter name for FingerJoint
 msgid "extra_length"
-msgstr ""
+msgstr "Удлинение"
 
 #. help for parameter extra_length
 msgid "extra material to grind away burn marks (multiples of thickness)"
-msgstr ""
+msgstr "дополнительная высота шипа под шлифовку от нагара (кратно толщине)"
 
 #. parameter name for FingerJoint
 msgid "finger"
-msgstr ""
+msgstr "Шип"
 
 #. help for parameter finger
-#, fuzzy
 msgid "width of the fingers (multiples of thickness)"
-msgstr "ширина шипа"
+msgstr "длина шипа (кратно толщине)"
 
 #. parameter name for FingerJoint
 msgid "play"
-msgstr ""
+msgstr "Зазор"
 
 #. help for parameter play
 msgid "extra space to allow finger move in and out (multiples of thickness)"
-msgstr ""
+msgstr "зазор для более лёгкой сборки соединения (кратно толщине)"
 
 #. parameter name for FingerJoint
 msgid "space"
-msgstr "Расстояние"
+msgstr "Паз"
 
 #. help for parameter space
-#, fuzzy
 msgid "space between fingers (multiples of thickness)"
-msgstr "расстояние между шипами"
+msgstr "длина паза/отверстия (кратно толщине)"
 
 #. parameter name for FingerJoint
 msgid "width"
-msgstr "Ширина"
+msgstr "Отверстие"
 
 #. help for parameter width
-#, fuzzy
 msgid "width of finger holes (multiples of thickness)"
-msgstr "ширина отверстий для пальцев"
+msgstr "ширина отверстий в соединении типа шип-отверстие (кратно толщине)"
 
 msgid "Settings for Stackable Edges"
-msgstr "Настройки для складываемых краев"
+msgstr "Настройки для стыкуемых краев"
 
 #. help for parameter angle
 msgid "inside angle of the feet"
-msgstr "внутренний угол ступней"
+msgstr "внутренний угол ножек"
 
 #. parameter name for Stackable
 msgid "height"
@@ -960,75 +956,78 @@ msgstr "Высота"
 
 #. help for parameter height
 msgid "height of the feet (multiples of thickness)"
-msgstr ""
+msgstr "высота ножек (кратно толщине)"
 
 #. parameter name for Stackable
 msgid "holedistance"
-msgstr "расстояние между отверстиями"
+msgstr "Отступ"
 
 #. help for parameter holedistance
-#, fuzzy
 msgid "distance from finger holes to bottom edge (multiples of thickness)"
-msgstr "расстояние от отверстий для пальцев до нижнего края"
+msgstr "расстояние от отверстий до ниженго края (кратно толщине)"
 
 #. help for parameter width
 msgid "width of the feet (multiples of thickness)"
-msgstr ""
+msgstr "ширина ножек (кратно толщине)"
 
 msgid "Settings for Hinges and HingePins"
-msgstr "Настройки петель"
+msgstr "Настройки встроенных петель"
 
 #. parameter name for Hinge
 msgid "grip_percentage"
 msgstr "Процент захвата"
 
+#. help for parameter grip_percentage
+msgid "percentage of the lid that should get grips"
+msgstr "процент длины края с гребёнкой для захвата"
+
 #. parameter name for Hinge
 msgid "outset"
-msgstr ""
+msgstr "Заподлицо"
 
 #. help for parameter outset
 msgid "have lid overlap at the sides (similar to OutSetEdge)"
-msgstr ""
+msgstr "должна ли крышка закрывать боковые стенки"
 
 #. parameter name for Hinge
 msgid "pinwidth"
-msgstr ""
+msgstr "Ширина оси"
 
 #. help for parameter pinwidth
 msgid "set to lower value to get disks surrounding the pins"
-msgstr ""
+msgstr "значение меньше 1 создаст диск вокруг оси петли"
 
 #. help for parameter style
 msgid "\"outset\" or \"flush\""
-msgstr ""
+msgstr "расположение петли: заподлицо со стенкой или с отступом"
 
 #. possible choice for style
 msgid "flush"
-msgstr ""
+msgstr "С отступом"
 
 #. parameter name for Hinge
 msgid "axle"
-msgstr "Ось"
+msgstr "Диаметр"
 
 #. help for parameter axle
 msgid "diameter of the pin hole (multiples of thickness)"
-msgstr ""
+msgstr "диаметр отверстия петли (кратно толщине)"
 
 #. parameter name for Hinge
 msgid "grip_length"
-msgstr ""
+msgstr "Длина гребёнки"
 
 #. help for parameter grip_length
 msgid "fixed length of the grips on he lids (multiples of thickness)"
-msgstr ""
+msgstr "длина гребёнки для захвата (кратно толщине)"
 
 #. parameter name for Hinge
 msgid "hingestrength"
-msgstr ""
+msgstr "Прочность петли"
 
 #. help for parameter hingestrength
 msgid "thickness of the arc holding the pin in place (multiples of thickness)"
-msgstr ""
+msgstr "ширина кольца петли (кратно толщине)"
 
 msgid "Settings for Slide-on Lids"
 msgstr ""
